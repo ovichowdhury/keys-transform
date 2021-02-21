@@ -1,0 +1,32 @@
+{
+  "name": "keys-transform",
+  "version": "1.0.0",
+  "description": "Recursive Transformation of object keys to lower, upper and camel case",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nahid Chowdhury",
+  "license": "ISC",
+  "dependencies": {
+    "lodash.camelcase": "^4.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "object",
+    "keys",
+    "transform",
+    "lower",
+    "upper",
+    "camelcase",
+    "nodejs",
+    "react"
+  ],
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}
