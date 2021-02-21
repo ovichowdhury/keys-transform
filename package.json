@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nahid Chowdhury",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "lodash.camelcase": "^4.3.0"
   },
@@ -28,5 +28,10 @@
   "bugs": {
     "url": "https://github.com/ovichowdhury/keys-transform/issues"
   },
-  "homepage": "https://github.com/ovichowdhury/keys-transform"
+  "homepage": "https://github.com/ovichowdhury/keys-transform",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "devDependencies": {}
 }
