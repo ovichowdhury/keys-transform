@@ -1,6 +1,6 @@
 {
   "name": "keys-transform",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Recursive Transformation of object keys to lower, upper and camel case",
   "main": "lib/index.js",
   "scripts": {

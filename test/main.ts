@@ -1,4 +1,4 @@
-import {toLowerKeys, toUpperKeys, toCamelKeys} from '../lib/index'; 
+import {toLowerKeys, toUpperKeys, toCamelKeys, toSnakeKeys} from '../lib/index'; 
 
 function main() {
     const obj = {
@@ -22,5 +22,7 @@ function main() {
     console.log(toUpperKeys(obj));
 
     console.log(toCamelKeys(obj));
+
+    console.log(toSnakeKeys(obj));
 }
 main();

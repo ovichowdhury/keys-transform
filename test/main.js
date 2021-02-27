@@ -1,4 +1,4 @@
-const {toLowerKeys, toUpperKeys, toCamelKeys} = require('../lib/index');
+const {toLowerKeys, toUpperKeys, toCamelKeys, toSnakeKeys} = require('../lib/index');
 
 function main() {
     const obj = {
@@ -22,5 +22,7 @@ function main() {
     console.log(toUpperKeys(obj));
 
     console.log(toCamelKeys(obj));
+
+    console.log(toSnakeKeys(obj));
 }
 main();
