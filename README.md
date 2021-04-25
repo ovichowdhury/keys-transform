@@ -21,7 +21,7 @@ $ yarn add keys-transform
 ## Code Example
 
 ```js
-const {toLowerKeys, toUpperKeys, toCamelKeys, toSnakeKeys} = require('keys-transform');
+const {toLowerKeys, toUpperKeys, toCamelKeys, toSnakeKeys, changeKeys} = require('keys-transform');
 
 const obj = {
     "NAME_ME": "Nahid Chowdhury",
@@ -39,13 +39,39 @@ const obj = {
     }
 }
 
+/**
+ * Lower case object keys recursively
+ * @param {Object} objectToCon
+ */
 console.log(toLowerKeys(obj));
 
+/**
+ * Upper case object keys recursively
+ * @param {Object} objectToCon
+ */
 console.log(toUpperKeys(obj));
 
+/**
+ * Camel case object keys recursively
+ * @param {Object} objectToCon
+ */
 console.log(toCamelKeys(obj));
 
+/**
+ * Snake case object keys recursively
+ * @param {Object} objectToCon
+ */
 console.log(toSnakeKeys(obj));
+
+/**
+ * Change object keys name recursively
+ * @param {Object} objectToCon
+ * @param {Object} changedKeys
+ */
+console.log(changeKeys(obj, {
+    "NAME_ME": "name",
+    "professional": "occupation"
+}));
 
   
 ```
