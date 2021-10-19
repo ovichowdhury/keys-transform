@@ -1,3 +1,4 @@
+const { toSnakeCase, toCamelCase } = require("../lib");
 const {
     toLowerKeys,
     toUpperKeys,
@@ -8,36 +9,31 @@ const {
 
 function main() {
     const date = new Date();
-    const obj = {
-        NAME_ME: "Nahid Chowdhury",
-        AGE: 26,
-        hobby: ["Coding", "singing"],
-        job: {
-            professional: "engineer",
-            personal: null,
-        },
-        planet_Belongs: undefined,
-        nesT: {
-            dummy_me: {
-                hellO: "world",
-            },
-        },
-        date_test: date,
-    };
+    const obj = [
+        {name: "nahid", AGE: 10, fatherName: "nahid", mother_name: "nahid"},
+        {name: "nahid", AGE: 10},
+        {name: "nahid", AGE: 10},
+        {name: "nahid", AGE: 10, hobby: [[{HELLO_: "world"}], [{WORLD: "hello"}], {date: date}, [[{name_sSake: "ovi"}]]]},
+        "hello world",
+        date
+    ]
 
-    console.log(toLowerKeys(obj));
+    // console.log(JSON.stringify(toLowerKeys(obj), null, 4));
 
-    console.log(toUpperKeys(obj));
+    // console.log(JSON.stringify(toUpperKeys(obj), null, 4));
 
-    console.log(toCamelKeys(obj));
+    // console.log(JSON.stringify(toCamelKeys(obj), null, 4));
 
-    console.log(toSnakeKeys(obj));
+    // console.log(JSON.stringify(toSnakeKeys(obj), null, 4));
 
-    console.log(
-        changeKeys(obj, {
-            NAME_ME: "name",
-            professional: "occupation",
-        })
-    );
+    // console.log(
+    //     changeKeys(obj, {
+    //         name: "name_me",
+    //         professional: "occupation",
+    //     })
+    // );
+
+    console.log(toSnakeCase("myName"));
+    console.log(toCamelCase("my_name"));
 }
 main();

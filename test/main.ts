@@ -1,3 +1,5 @@
+import { toSnakeCase } from "../lib";
+import { toCamelCase } from "../lib";
 import {
     toLowerKeys,
     toUpperKeys,
@@ -39,5 +41,8 @@ function main() {
             professional: "occupation",
         })
     );
+
+    console.log(toCamelCase("my_name"));
+    console.log(toSnakeCase("myName"));
 }
 main();
